@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a191467-78b6-4ef8-b80a-2b3a632af430" name="Default" comment="upgrade">
+    <list default="true" id="3a191467-78b6-4ef8-b80a-2b3a632af430" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="goto.iws" />
@@ -27,13 +27,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1580" selection-end="1580" vertical-scroll-proportion="-26.153847" vertical-offset="102" max-vertical-offset="1445">
+            <state line="48" column="156" selection-start="1810" selection-end="1810" vertical-scroll-proportion="0.5839695" vertical-offset="357" max-vertical-offset="1598">
               <folding>
-                <marker date="1390481122023" expanded="true" signature="639:790" placeholder="..." />
-                <marker date="1390481122023" expanded="true" signature="755:784" placeholder="..." />
+                <marker date="1390484654735" expanded="true" signature="639:790" placeholder="..." />
+                <marker date="1390484654735" expanded="true" signature="755:784" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -57,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="13" selection-start="748" selection-end="748" vertical-scroll-proportion="0.2060606" vertical-offset="867" max-vertical-offset="3485">
+            <state line="210" column="1" selection-start="3623" selection-end="3623" vertical-scroll-proportion="0.0" vertical-offset="2847" max-vertical-offset="3672">
               <folding />
             </state>
           </provider>
@@ -86,9 +86,9 @@
       <list>
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -266,7 +266,11 @@
       <created>1390478161250</created>
       <updated>1390478161250</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="upgrade">
+      <created>1390479388234</created>
+      <updated>1390479388234</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -313,8 +317,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="43" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0" vertical-offset="404" max-vertical-offset="1275">
           <folding>
-            <marker date="1390481122023" expanded="true" signature="639:790" placeholder="..." />
-            <marker date="1390481122023" expanded="true" signature="755:784" placeholder="..." />
+            <marker date="1390484654735" expanded="true" signature="639:790" placeholder="..." />
+            <marker date="1390484654735" expanded="true" signature="755:784" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -365,23 +369,6 @@
         <state line="1197" column="7" selection-start="18566" selection-end="18566" vertical-scroll-proportion="0.33333334" vertical-offset="20074" max-vertical-offset="64651" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="2" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1580" selection-end="1580" vertical-scroll-proportion="-26.153847" vertical-offset="102" max-vertical-offset="1445">
-          <folding>
-            <marker date="1390481122023" expanded="true" signature="639:790" placeholder="..." />
-            <marker date="1390481122023" expanded="true" signature="755:784" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="42" selection-start="756" selection-end="756" vertical-scroll-proportion="0.31954888" vertical-offset="0" max-vertical-offset="7004">
@@ -396,6 +383,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="2" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2122" column="21" selection-start="40608" selection-end="40608" vertical-scroll-proportion="0.0" vertical-offset="35735" max-vertical-offset="44761">
@@ -405,8 +399,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="13" selection-start="748" selection-end="748" vertical-scroll-proportion="0.2060606" vertical-offset="867" max-vertical-offset="3485">
+        <state line="210" column="1" selection-start="3623" selection-end="3623" vertical-scroll-proportion="0.0" vertical-offset="2847" max-vertical-offset="3672">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="156" selection-start="1810" selection-end="1810" vertical-scroll-proportion="0.5839695" vertical-offset="357" max-vertical-offset="1598">
+          <folding>
+            <marker date="1390484654735" expanded="true" signature="639:790" placeholder="..." />
+            <marker date="1390484654735" expanded="true" signature="755:784" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

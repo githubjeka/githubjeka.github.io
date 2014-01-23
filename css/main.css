@@ -2,7 +2,7 @@ html, body, .height100 {
     height: 100%;
 }
 
-.height100 > .col-lg-6 {
+.height100 > .col-lg-4 {
     height: 50%;
     box-shadow: 0 0 2px 2px #222;
 }
@@ -68,16 +68,15 @@ html, body, .height100 {
     position: relative;
 }
 
-.grid1:hover {
+.grid1:hover  {
     background: url(http://farm5.staticflickr.com/4122/4878886438_acf913021e.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .grid2:hover {
     background: url(http://farm8.staticflickr.com/7058/6830016482_2b2f1b90fc.jpg) no-repeat center center;
+}
+
+.grid1:hover, .grid2:hover  {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -196,4 +195,17 @@ svg:not(:root) {
 
 .grid4 {
 
+}
+
+
+.grid5 {
+    text-align: center;
+    padding-bottom: 100px;
+}
+.grid5 footer {
+    height: 100px;
+    width:100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
