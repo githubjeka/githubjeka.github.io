@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a191467-78b6-4ef8-b80a-2b3a632af430" name="Default" comment="" />
+    <list default="true" id="3a191467-78b6-4ef8-b80a-2b3a632af430" name="Default" comment="upgrade">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="goto.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,10 +30,10 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="977" selection-end="977" vertical-scroll-proportion="-11.115385" vertical-offset="204" max-vertical-offset="1445">
+            <state line="46" column="0" selection-start="1580" selection-end="1580" vertical-scroll-proportion="-26.153847" vertical-offset="102" max-vertical-offset="1445">
               <folding>
-                <marker date="1390479082600" expanded="true" signature="639:790" placeholder="..." />
-                <marker date="1390479082600" expanded="true" signature="755:784" placeholder="..." />
+                <marker date="1390481122023" expanded="true" signature="639:790" placeholder="..." />
+                <marker date="1390481122023" expanded="true" signature="755:784" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -56,7 +60,7 @@
       <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="16" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.49334946" vertical-offset="1683" max-vertical-offset="3230">
+            <state line="61" column="13" selection-start="748" selection-end="748" vertical-scroll-proportion="0.2060606" vertical-offset="867" max-vertical-offset="3485">
               <folding />
             </state>
           </provider>
@@ -69,12 +73,21 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
@@ -86,7 +99,7 @@
     <option name="width" value="1288" />
     <option name="height" value="1002" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -245,19 +258,29 @@
       <created>1390452039484</created>
       <updated>1390452039484</updated>
     </task>
+    <task id="LOCAL-00001" summary="upgrade">
+      <created>1390478023250</created>
+      <updated>1390478023250</updated>
+    </task>
+    <task id="LOCAL-00002" summary="upgrade">
+      <created>1390478161250</created>
+      <updated>1390478161250</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="1002" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25364667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25364667" sideWeight="0.6709753" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -279,6 +302,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="upgrade" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgrade" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -288,8 +313,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="43" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0" vertical-offset="404" max-vertical-offset="1275">
           <folding>
-            <marker date="1390479082600" expanded="true" signature="639:790" placeholder="..." />
-            <marker date="1390479082600" expanded="true" signature="755:784" placeholder="..." />
+            <marker date="1390481122023" expanded="true" signature="639:790" placeholder="..." />
+            <marker date="1390481122023" expanded="true" signature="755:784" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -347,6 +372,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1580" selection-end="1580" vertical-scroll-proportion="-26.153847" vertical-offset="102" max-vertical-offset="1445">
+          <folding>
+            <marker date="1390481122023" expanded="true" signature="639:790" placeholder="..." />
+            <marker date="1390481122023" expanded="true" signature="755:784" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="42" selection-start="756" selection-end="756" vertical-scroll-proportion="0.31954888" vertical-offset="0" max-vertical-offset="7004">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="10" selection-start="178" selection-end="178" vertical-scroll-proportion="0.1030303" vertical-offset="0" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2122" column="21" selection-start="40608" selection-end="40608" vertical-scroll-proportion="0.0" vertical-offset="35735" max-vertical-offset="44761">
@@ -354,19 +403,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="977" selection-end="977" vertical-scroll-proportion="-11.115385" vertical-offset="204" max-vertical-offset="1445">
-          <folding>
-            <marker date="1390479082600" expanded="true" signature="639:790" placeholder="..." />
-            <marker date="1390479082600" expanded="true" signature="755:784" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="16" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.49334946" vertical-offset="1683" max-vertical-offset="3230">
+        <state line="61" column="13" selection-start="748" selection-end="748" vertical-scroll-proportion="0.2060606" vertical-offset="867" max-vertical-offset="3485">
           <folding />
         </state>
       </provider>

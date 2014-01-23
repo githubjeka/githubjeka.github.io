@@ -62,14 +62,22 @@ html, body, .height100 {
     left: 61%
 }
 
-.grid1 {
+.grid1, .grid2 {
     -webkit-transition: all 2s;
     transition: all 2s;
     position: relative;
 }
 
 .grid1:hover {
-    background: url(http://farm5.staticflickr.com/4122/4878886438_acf913021e.jpg) no-repeat center center fixed;
+    background: url(http://farm5.staticflickr.com/4122/4878886438_acf913021e.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.grid2:hover {
+    background: url(http://farm8.staticflickr.com/7058/6830016482_2b2f1b90fc.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -85,8 +93,8 @@ html, body, .height100 {
     display: block;
     -webkit-transition: opacity 1s ease-out;
     transition: opacity 1s ease-out;
-    -webkit-transition: margin-top 3s ease-out;
-    transition: margin-top 3s ease-out;
+    -webkit-transition: margin-top 0 ease-out;
+    transition: margin-top 0 ease-out;
     opacity: 0;
     overflow: hidden;
     padding: 20px;
@@ -95,6 +103,8 @@ html, body, .height100 {
 .grid1:hover .caption {
     margin-top: 10%;
     opacity: 0.8;
+    -webkit-transition: margin-top 2s .5s ease-out;
+    transition: margin-top 2s .5s ease-out;
 }
 
 .svg-wrapper {
