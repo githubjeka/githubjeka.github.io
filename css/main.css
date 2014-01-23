@@ -8,23 +8,27 @@ html, body, .height100 {
 }
 
 .bg1 {
-    background: #FFEEAD;
+    background: #1b7d93;
 }
 
 .bg2 {
-    background: #FF6F69;
+    background: #81A489;
 }
 
 .bg3 {
-    background: #FFCC5C;
+    background: #F1D8B5;
 }
 
 .bg4 {
-    background: #AAD8B0;
+    background: #F2A054;
 }
 
 .bg5 {
     background: #efdcd3;
+}
+
+.bg6 {
+    background: #C04D31;
 }
 
 .content div {
