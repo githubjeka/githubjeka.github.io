@@ -4,6 +4,7 @@ html, body, .height100 {
 
 .height100 > .col-lg-6 {
     height: 50%;
+    box-shadow: 0 0 2px 2px #222;
 }
 
 .bg1 {
@@ -84,15 +85,15 @@ html, body, .height100 {
     display: block;
     -webkit-transition: opacity 1s ease-out;
     transition: opacity 1s ease-out;
+    -webkit-transition: margin-top 3s ease-out;
+    transition: margin-top 3s ease-out;
     opacity: 0;
-    height: 0;
     overflow: hidden;
+    padding: 20px;
 }
 
 .grid1:hover .caption {
-    height: auto;
-    padding: 20px;
-    margin-top: 5%;
+    margin-top: 10%;
     opacity: 0.8;
 }
 
@@ -181,4 +182,8 @@ svg:not(:root) {
     transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out
+}
+
+.grid4 {
+
 }
