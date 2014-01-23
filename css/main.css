@@ -4,7 +4,7 @@ html, body, .height100 {
 
 .height100 > .col-lg-4 {
     height: 50%;
-    box-shadow: 0 0 2px 2px #222;
+    box-shadow: 0 0 7px 2px #222;
 }
 
 .bg1 {
@@ -62,10 +62,11 @@ html, body, .height100 {
     left: 61%
 }
 
-.grid1, .grid2 {
+.grid1, .grid2, .grid3, .grid4, .grid6 {
     -webkit-transition: all 2s;
     transition: all 2s;
     position: relative;
+    text-align: center;
 }
 
 .grid1:hover  {
@@ -74,6 +75,18 @@ html, body, .height100 {
 
 .grid2:hover {
     background: url(http://farm8.staticflickr.com/7058/6830016482_2b2f1b90fc.jpg) no-repeat center center;
+}
+
+.grid3:hover {
+    background: url('http://www.absasa.com/images/products/evening-dresses/sexy_sheath_column_v-neck_beading_sleeveless_floor-length_chiffon_prom_dresses_evening_dresses-1.jpg') no-repeat center center;
+}
+
+.grid4:hover {
+    background: url('http://www.seb.ee/image/pildipank/vormid.jpg') no-repeat center center;
+}
+
+.grid6:hover {
+    background: url('http://www.architectorgallery.ru/UPLOAD/2012/04/06/dscn4345_1200_0.jpg') no-repeat center center;
 }
 
 .grid1:hover, .grid2:hover  {
