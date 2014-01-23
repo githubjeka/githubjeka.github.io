@@ -1,0 +1,184 @@
+html, body, .height100 {
+    height: 100%;
+}
+
+.height100 > .col-lg-6 {
+    height: 50%;
+}
+
+.bg1 {
+    background: #FFEEAD;
+}
+
+.bg2 {
+    background: #FF6F69;
+}
+
+.bg3 {
+    background: #FFCC5C;
+}
+
+.bg4 {
+    background: #AAD8B0;
+}
+
+.bg5 {
+    background: #efdcd3;
+}
+
+.content div {
+    height: 100%;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+}
+
+.imageBlock {
+    position: absolute;
+    width: 60%;
+    top: 0;
+    left: -60%;
+    -webkit-transition: left 1s;
+    transition: left 1s;
+}
+
+.descBlock {
+    position: absolute;
+    width: 40%;
+    left: 100%;
+    top: 0;
+    -webkit-transition: left 1s;
+    transition: left 1s;
+}
+
+.imageBlock.animate {
+    left: 0;
+}
+
+.descBlock.animate {
+    left: 61%
+}
+
+.grid1 {
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    position: relative;
+}
+
+.grid1:hover {
+    background: url(http://farm5.staticflickr.com/4122/4878886438_acf913021e.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.grid1:hover h1 {
+    display: none;
+    visibility: hidden;
+}
+
+.grid1 .caption {
+    display: block;
+    -webkit-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.grid1:hover .caption {
+    height: auto;
+    padding: 20px;
+    margin-top: 5%;
+    opacity: 0.8;
+}
+
+.svg-wrapper {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    padding: 0;
+    margin-left: -100px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    background: #efdcd3;
+    border: none;
+    height: 60px;
+    width: 200px;
+    color: #000000;
+}
+
+.grid1 .text {
+    font-size: 25px;
+    top: -52px;
+    position: relative;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.grid1:hover .shape {
+    -webkit-animation: 1s draw linear forwards;
+}
+
+.shape {
+    stroke-dasharray: 80 540;
+    stroke-dashoffset: -320;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: #000;
+    -webkit-animation: .5s un-draw linear forwards;
+}
+
+@-webkit-keyframes draw {
+    0% {
+        stroke-width: 3px;
+        stroke-dashoffset: -320;
+        stroke-dasharray: 80 340
+    }
+    100% {
+        stroke-width: 3px;
+        stroke-dashoffset: 0;
+        stroke-dasharray: 520
+    }
+}
+
+@-webkit-keyframes un-draw {
+    0% {
+        stroke-width: 7px;
+        stroke-dashoffset: 0;
+        stroke-dasharray: 520
+    }
+    70% {
+        stroke-width: 7px;
+        stroke-dashoffset: -340;
+        stroke-dasharray: 40 340
+    }
+    100% {
+        stroke-width: 7px;
+        stroke-dashoffset: -320;
+        stroke-dasharray: 80 340
+    }
+}
+
+.fadein {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out
+}
+
+.fadeout {
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out
+}
