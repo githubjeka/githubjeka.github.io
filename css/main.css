@@ -73,7 +73,7 @@ html, body, .height100 {
     text-align: center;
 }
 
-.grid1:hover  {
+.grid1:hover {
     background: url(http://farm5.staticflickr.com/4122/4878886438_acf913021e.jpg) no-repeat center center;
 }
 
@@ -93,16 +93,11 @@ html, body, .height100 {
     background: url('http://www.architectorgallery.ru/UPLOAD/2012/04/06/dscn4345_1200_0.jpg') no-repeat center center;
 }
 
-.grid1:hover, .grid2:hover  {
+.grid1:hover, .grid2:hover {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-.grid1:hover h1 {
-    display: none;
-    visibility: hidden;
 }
 
 .grid1 .caption {
@@ -196,32 +191,14 @@ svg:not(:root) {
     }
 }
 
-.fadein {
-    opacity: 1;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out
-}
-
-.fadeout {
-    opacity: 0;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out
-}
-
-.grid4 {
-
-}
-
-
 .grid5 {
     text-align: center;
     padding-bottom: 100px;
 }
+
 .grid5 footer {
     height: 100px;
-    width:100%;
+    width: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
