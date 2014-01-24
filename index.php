@@ -38,7 +38,8 @@
             <small>Частное унитарное предприятие по оказанию услуг</small>
             <h1>Студия "СПЭС"</h1>
             <hr>
-            <img src="http://image.spreadshirt.net/image-server/v1/designs/14787655,width%3D178,height%3D178/60-year-diamond-jubilee-queen-elizabeth-logo.png">
+            <img
+                src="http://image.spreadshirt.net/image-server/v1/designs/14787655,width%3D178,height%3D178/60-year-diamond-jubilee-queen-elizabeth-logo.png">
             <footer>2014г - spas</footer>
         </div>
 
