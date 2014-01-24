@@ -27,7 +27,7 @@
     <div id="grid" class="row height100 show">
 
         <div class="col-lg-4 bg1 grid1">
-            <h1>Пошив индивидуальных заказов</h1>
+            <h1>Пошив одежды по индивидуальным заказам</h1>
         </div>
         <div class="col-lg-4 bg2 grid2"><h1>Сценические костюмы</h1></div>
         <div class="col-lg-4 bg3 grid3"><h1>Разработка и пошив вечерних и свадебных нарядов</h1></div>
