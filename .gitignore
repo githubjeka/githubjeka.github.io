@@ -7,7 +7,6 @@ Thumbs.db
 *.empty
 
 #phpstorm project files
-.idea
 
 #netbeans project files
 nbproject
