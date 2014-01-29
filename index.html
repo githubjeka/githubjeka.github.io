@@ -1,0 +1,49 @@
+
+<div class="container height100">
+
+    <div id="grid" class="row height100" ng-if="!data">
+
+        <a href="gooo" class="col-lg-4 bg1 grid1">
+            <h1>Пошив одежды по индивидуальным заказам</h1>
+        </a>
+        <div class="col-lg-4 bg2 grid2"><h1>Сценические костюмы</h1></div>
+        <div class="col-lg-4 bg3 grid3"><h1>Разработка и пошив вечерних и свадебных нарядов</h1></div>
+
+        <div class="col-lg-4 bg4 grid4"><h1>Разработка фирменного стиля и форменной одежды</h1></div>
+
+        <div class="col-lg-4 bg5 grid5">
+            <small>Частное унитарное предприятие по оказанию услуг</small>
+            <h1>Студия "СПЭС"</h1>
+            <hr>
+            <img
+                    src="http://image.spreadshirt.net/image-server/v1/designs/14787655,width%3D178,height%3D178/60-year-diamond-jubilee-queen-elizabeth-logo.png">
+            <footer>2014г - spas</footer>
+        </div>
+
+        <div class="col-lg-4 bg6 grid6"><h1>Оформление интерьера</h1></div>
+
+    </div>
+<button ng-click="data=1">{{data}}</button>
+    <div id="content" class="content row height100" ng-if="data" >
+
+        <div class="imageBlock" ng-if="data==1">
+            <div class="bg2">
+                <a href="#" id="closeContent">Закрыть.</a>
+                tryurtyu erty ertueqw
+                <hr>
+                <hr>
+
+
+                <hr>
+            </div>
+        </div>
+
+        <div class="descBlock" ng-if="data==1">
+            <div class="bg5">
+{data}
+            </div>
+        </div>
+
+    </div>
+
+</div>

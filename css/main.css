@@ -39,31 +39,42 @@ html, body, .height100 {
     position: relative;
     width: 100%;
 }
+.descBlock {
+    position: absolute;
+    top: 0;
+    -webkit-transition: left 5s;
+    transition: left 5s;
+    width: 40%;
+    left: 61%
+}
 
 .imageBlock {
     position: absolute;
+    top: 0;
+    -webkit-transition: left 5s;
+    transition: left 5s;
     width: 60%;
-    top: 0;
-    left: -60%;
-    -webkit-transition: left 1s;
-    transition: left 1s;
-}
-
-.descBlock {
-    position: absolute;
-    width: 40%;
-    left: 100%;
-    top: 0;
-    -webkit-transition: left 1s;
-    transition: left 1s;
-}
-
-.imageBlock.animate {
     left: 0;
 }
 
-.descBlock.animate {
+.descBlock.ng-enter {
+    left: 100%;
+}
+
+/* starting animations for enter */
+
+.descBlock.ng-enter-active {
     left: 61%
+}
+
+.imageBlock.ng-enter {
+    left: -60%;
+}
+
+/* starting animations for enter */
+
+.imageBlock.ng-enter-active {
+    left: 0;
 }
 
 .grid1, .grid2, .grid3, .grid4, .grid6 {
