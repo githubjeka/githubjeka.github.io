@@ -2,6 +2,10 @@ html, body, .height100 {
     height: 100%;
 }
 
+body {
+    overflow: hidden;
+}
+
 .height100 > .col-lg-4 {
     height: 50%;
     box-shadow: 0 0 7px 2px #222;
@@ -39,41 +43,18 @@ html, body, .height100 {
     position: relative;
     width: 100%;
 }
+
 .descBlock {
     position: absolute;
     top: 0;
-    -webkit-transition: left 5s;
-    transition: left 5s;
     width: 40%;
-    left: 61%
+    left: 61%;
 }
 
 .imageBlock {
     position: absolute;
     top: 0;
-    -webkit-transition: left 5s;
-    transition: left 5s;
     width: 60%;
-    left: 0;
-}
-
-.descBlock.ng-enter {
-    left: 100%;
-}
-
-/* starting animations for enter */
-
-.descBlock.ng-enter-active {
-    left: 61%
-}
-
-.imageBlock.ng-enter {
-    left: -60%;
-}
-
-/* starting animations for enter */
-
-.imageBlock.ng-enter-active {
     left: 0;
 }
 
@@ -122,4 +103,58 @@ html, body, .height100 {
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+/* --- Анимация ---- */
+
+.ng-view.ng-enter, .ng-view.ng-leave {
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+}
+
+.ng-view.ng-enter .descBlock, .ng-view.ng-leave .descBlock,
+.ng-view.ng-enter .imageBlock, .ng-view.ng-leave .imageBlock {
+    -webkit-transition: all 1s .5s;
+    transition: all 1s .5s;
+}
+
+.ng-view.ng-enter .imageBlock {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.ng-view.ng-enter-active .imageBlock {
+
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.ng-view.ng-leave .imageBlock {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.ng-view.ng-leave-active .imageBlock {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.ng-view.ng-enter .descBlock {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.ng-view.ng-enter-active .descBlock {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.ng-view.ng-leave .descBlock {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.ng-view.ng-leave-active .descBlock {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
 }

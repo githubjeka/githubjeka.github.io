@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngRoute','ngAnimate']);
+var app = angular.module('myApp', ['ngRoute', 'ngAnimate']);
 
 app.config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
 
@@ -8,10 +8,17 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
             templateUrl: 'index.html'
         })
 
-        .when('/gooo', {
-            templateUrl: 'index.html',
-            controller: 'Main'
-        });
+        .when('/individual', {
+            templateUrl: 'content.html',
+            controller: 'IndividualCtrl'
+        })
+
+        .when('/404', {
+            templateUrl: '404.html'
+        })
+
+        .otherwise({ redirectTo: '/404.html' })
+    ;
 
     $locationProvider.html5Mode(true).hashPrefix('!');
 

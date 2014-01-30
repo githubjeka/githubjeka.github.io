@@ -215,6 +215,12 @@ AddDefaultCharset utf-8
     RewriteEngine On
     RewriteBase /test/goto/
 
+    RewriteCond %{QUERY_STRING} ^_escaped_fragment_=/?(.+)$ [NC]
+    RewriteRule ^ snapshots/%1.html? [NC,L]
+
+    RewriteCond %{QUERY_STRING} ^/?(.+)$/_escaped_fragment_=$ [NC]
+    RewriteRule ^ snapshots/%1.html? [NC,L]
+
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} !index

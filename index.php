@@ -17,16 +17,16 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body ng-cloak="">
 
-<!--[if lte IE 8]>
+<!--[if lte IE 9]>
 <p class="browsehappy">
     Похоже, вы используете <strong>устаревшую версию</strong> Internet Explorer. <a href="http://browsehappy.com/">Обновите
     свой браузер</a>.
 </p>
 <![endif]-->
 
-<div ng-view class="height100"></div>
+<div class="height100 ng-view"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-route.js"></script>

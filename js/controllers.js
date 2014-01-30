@@ -1,3 +1,3 @@
-app.controller('Main', ['$scope', function ($scope) {
+app.controller('IndividualCtrl', ['$scope', function ($scope) {
     $scope.data = 123;
 }]);
