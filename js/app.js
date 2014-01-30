@@ -5,7 +5,7 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
     $routeProvider
 
         .when('/', {
-            templateUrl: 'index.html'
+            templateUrl: 'main.html'
         })
 
         .when('/individual', {
@@ -17,7 +17,7 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
             templateUrl: '404.html'
         })
 
-        .otherwise({ redirectTo: '/404.html' })
+        .otherwise({ redirectTo: '/404' })
     ;
 
     $locationProvider.html5Mode(true).hashPrefix('!');
