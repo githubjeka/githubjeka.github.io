@@ -16,7 +16,7 @@ body {
 }
 
 .bg2 {
-    background: #251109;
+    background: #7a2c27;
 }
 
 .bg3 {
@@ -56,6 +56,10 @@ body {
     top: 0;
     width: 60%;
     left: 0;
+}
+
+.grid a {
+   color: #000000;
 }
 
 .grid1, .grid2, .grid3, .grid4, .grid6 {
