@@ -5,11 +5,11 @@
 
     <base href="/">
     <meta charset="utf-8">
-    <meta name="fragment" content="!" />
+    <meta name="fragment" content="!"/>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="3cC7iPXqFi5UUoRZt8MjYO7HyAq1QFCjIrhzbXL_Aq8" />
-    
+    <meta name="google-site-verification" content="3cC7iPXqFi5UUoRZt8MjYO7HyAq1QFCjIrhzbXL_Aq8"/>
+
     <title></title>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -27,7 +27,10 @@
 </p>
 <![endif]-->
 
-<div class="height100 ng-view"></div>
+<div class="height100 container-fluid">
+    <div class="height100 ng-view">
+    </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-route.js"></script>
