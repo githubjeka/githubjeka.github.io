@@ -37,6 +37,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-animate.js"></script>
 <script src="js/app.js"></script>
 <script src="js/controllers.js"></script>
+<script src="js/directives.js"></script>
 
 </body>
 </html>

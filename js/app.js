@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngRoute', 'ngAnimate']);
+var app = angular.module('myApp', ['ngRoute', 'ngAnimate', 'myApp.directives']);
 
 app.config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
 
@@ -23,3 +23,5 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
     $locationProvider.html5Mode(true).hashPrefix('!');
 
 }]);
+
+app.value('version', '0.1');

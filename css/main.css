@@ -134,3 +134,19 @@ article {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
 }
+
+.control {
+    position: absolute;
+    height: 100%;
+    cursor: pointer;
+}
+
+.next {
+    position: absolute;
+    top: 85%;
+}
+
+.prev {
+    position: absolute;
+    top: 0;
+}

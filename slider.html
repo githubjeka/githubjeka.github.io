@@ -1,0 +1,41 @@
+<div class="control">
+    <div ng-click="prev()" class="prev"><h1>Назад</h1></div>
+    <div ng-click="next()" class="next"><h1>Вперёд</h1></div>
+</div>
+<div ng-repeat="image in images" class="animate-repeat">
+
+    <div class="img-thumbnail">
+        <img ng-src="{{image}}" class="img-responsive">
+    </div>
+
+</div>
+
+<style>
+
+    .animate-repeat {
+        line-height: 40px;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    .animate-repeat.ng-move,
+    .animate-repeat.ng-enter,
+    .animate-repeat.ng-leave {
+        -webkit-transition:all linear 0.5s;
+        transition:all linear 0.5s;
+    }
+
+    .animate-repeat.ng-leave.ng-leave-active,
+    .animate-repeat.ng-move,
+    .animate-repeat.ng-enter {
+        opacity:0;
+        max-height:0;
+    }
+
+    .animate-repeat.ng-leave,
+    .animate-repeat.ng-move.ng-move-active,
+    .animate-repeat.ng-enter.ng-enter-active {
+        opacity:1;
+        max-height:40px;
+    }
+</style>
