@@ -17,6 +17,13 @@
           rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- Basic stylesheet -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="css/owl.theme.css">
+
 </head>
 <body ng-cloak="">
 
@@ -35,6 +42,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-route.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-animate.js"></script>
+
+<script src="js/my-angular-carousel.js"></script>
+
 <script src="js/app.js"></script>
 <script src="js/controllers.js"></script>
 <script src="js/directives.js"></script>

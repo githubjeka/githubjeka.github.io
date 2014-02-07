@@ -32,6 +32,9 @@ angular.module('myApp.directives', []).
                 var height = element[0].offsetHeight;
                 element.css("overflow", "hidden");
                 console.log(height);
+                element.hover(function() {
+                    element.toggleClass('ui-state-hover');
+                })
             }
         };
     }]);
