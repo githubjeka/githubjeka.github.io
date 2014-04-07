@@ -1,0 +1,259 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic);
+
+html,
+body {
+    height: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+li.active a {
+    background-color: #7eabcc;
+    color: white;
+    font-weight: bold;
+}
+
+/*___________________________________________________________________________________*/
+
+html, body, .height100 {
+    height: 100%;
+}
+
+section {
+    height: 50%;
+    box-shadow: inset 0 0 7px #000;
+}
+
+.carousel {
+    overflow: hidden;
+}
+
+.bg1 {
+    background: #A77448;
+}
+
+.bg2 {
+    background: #7a2c27;
+}
+
+.bg3 {
+    background: #713824;
+}
+
+.bg4 {
+    background: #F2A054;
+}
+
+.bg5 {
+    background: #F3F3F1;
+}
+
+.bg6 {
+    background: #C04D31;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+}
+
+.grid a {
+    color: #000000;
+}
+
+.grid1, .grid2, .grid3, .grid4, .grid6 {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    position: relative;
+    text-align: center;
+}
+
+.grid1:hover {
+    background: url(http://farm5.staticflickr.com/4122/4878886438_acf913021e.jpg) no-repeat center center;
+}
+
+.grid2:hover {
+    background: url(http://farm8.staticflickr.com/7058/6830016482_2b2f1b90fc.jpg) no-repeat center center;
+}
+
+.grid3:hover {
+    background: url('http://www.absasa.com/images/products/evening-dresses/sexy_sheath_column_v-neck_beading_sleeveless_floor-length_chiffon_prom_dresses_evening_dresses-1.jpg') no-repeat center center;
+}
+
+.grid4:hover {
+    background: url('http://www.seb.ee/image/pildipank/vormid.jpg') no-repeat center center;
+}
+
+.grid6:hover {
+    background: url('http://www.architectorgallery.ru/UPLOAD/2012/04/06/dscn4345_1200_0.jpg') no-repeat center center;
+}
+
+.grid1:hover, .grid2:hover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.grid5 {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.grid5 footer {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* --- Анимация ---- */
+
+.ng-view.ng-enter, .ng-view.ng-leave {
+    -webkit-transition: all .1s;
+    transition: all .1s;
+}
+
+.ng-view.ng-enter aside, .ng-view.ng-leave aside {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.ng-view.ng-enter article, .ng-view.ng-leave article {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+article .content {
+    font-size: 18px;
+}
+
+/*__________________*/
+
+#owl-demo .item {
+    margin: 3px;
+}
+
+#owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#owl-gallery .item {
+    background: #0c83e7;
+    padding: 70px 0px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#owl-sync .item {
+    background: #C9C9C9;
+    padding: 10px 0px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#owl-sync .item h1 {
+    font-size: 18px;
+}
+
+#owl-sync .synced .item {
+    background: #0c83e7;
+}

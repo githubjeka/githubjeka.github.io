@@ -36,8 +36,7 @@
 		]
 	},
 	"config": {
-        "process-timeout": 1800,
-        "vendor-dir": "protected/vendor"
+        "process-timeout": 1800
     },
 	"extra": {
 		"writable": [
