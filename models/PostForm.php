@@ -47,6 +47,6 @@ class PostForm extends Model
         if ($absolute)
             return Yii::getAlias('@web/storage/image/') . $this->sector . '/';
         else
-            return Yii::getAlias('@app/../storage/image/') . $this->sector . '/';
+            return Yii::getAlias('@app/web/storage/image/') . $this->sector . '/';
     }
 }
