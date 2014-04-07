@@ -210,20 +210,13 @@ AddDefaultCharset utf-8
 # http://www.rackspace.com/knowledge_center/frequently-asked-question/why-is-mod-rewrite-not-working-on-my-site
 
 <IfModule mod_rewrite.c>
-    Options +FollowSymlinks
-  # Options +SymLinksIfOwnerMatch
-    RewriteEngine On
-#    RewriteBase /
+   RewriteEngine on
 
-    RewriteCond %{QUERY_STRING} ^_escaped_fragment_=/?(.+)$ [NC]
-    RewriteRule ^ snapshots/%1.html? [NC,L]
-
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} !index
-    RewriteCond %{REQUEST_URI} !.*\.(css|js|html|png)
-    RewriteRule (.*) index.php [L]
-
+   # If a directory or a file exists, use it directly
+   RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteCond %{REQUEST_FILENAME} !-d
+   # Otherwise forward it to index.php
+   RewriteRule . index.php
 </IfModule>
 
 # ------------------------------------------------------------------------------
