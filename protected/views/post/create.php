@@ -26,7 +26,7 @@ Url::remember();
             <?php
             $images = scandir($post->getPathImage(false));
             foreach ($images as $image) {
-                if ($image !== '.' && $image !== '..') {
+                if ($image !== '.' && $image !== '..' && $image !== '.gitignore') {
                     ?>
 
                     <div class="item thumbnail">

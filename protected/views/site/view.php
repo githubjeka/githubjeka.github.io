@@ -11,7 +11,7 @@ $images = scandir($post->getPathImage(false));
         <div id="owl-sync">
             <?php
             foreach ($images as $image) {
-                if ($image !== '.' && $image !== '..') {
+                if ($image !== '.' && $image !== '..' && $image !== '.gitignore') {
                     ?>
                     <div class="item thumbnail">
                         <img class="lazyOwl img-responsive" data-src="<?= $post->getPathImage() . $image ?>"
@@ -26,7 +26,7 @@ $images = scandir($post->getPathImage(false));
         <div id="owl-gallery">
             <?php
             foreach ($images as $image) {
-                if ($image !== '.' && $image !== '..') {
+                if ($image !== '.' && $image !== '..' && $image !== '.gitignore') {
                     ?>
                     <div class="item thumbnail">
                         <img class="lazyOwl img-responsive" data-src="<?= $post->getPathImage() . $image ?>"
