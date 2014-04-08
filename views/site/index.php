@@ -32,15 +32,17 @@ $post = new \app\models\Post();
         </a></section>
 
     <section class="col-lg-4 bg5 grid5">
-        <div class="col-xs-12">
-            <small>Частное унитарное предприятие по оказанию услуг</small>
-            <h1>Студия "СПЭС"</h1>
-        </div>
-        <div class="col-xs-12">
-            <img src="<?= Yii::getAlias('@web/studiospas/logo.png'); ?>" class="img-responsive">
-        </div>
-        <div class="col-xs-12">
-            <small>2014 - spas</small>
+        <div class="row">
+            <div class="col-xs-12">
+                <small>Частное унитарное предприятие по оказанию услуг</small>
+                <h1>Студия "СПЭС"</h1>
+            </div>
+            <div class="col-xs-12">
+                <img src="<?= Yii::getAlias('@web/studiospas/logo.png'); ?>" class="img-responsive center-block">
+            </div>
+            <div class="col-xs-12">
+                <small>2014 - spas</small>
+            </div>
         </div>
     </section>
 
