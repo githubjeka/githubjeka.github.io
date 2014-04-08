@@ -1,8 +1,6 @@
 <?php
 use yii\helpers\Url;
 
-$images = scandir($post->getPathImage(false));
-
 ?>
 <div class="row height100">
 
@@ -10,30 +8,26 @@ $images = scandir($post->getPathImage(false));
 
         <div id="owl-sync">
             <?php
-            foreach ($images as $image) {
-                if ($image !== '.' && $image !== '..' && $image !== '.gitignore') {
-                    ?>
-                    <div class="item thumbnail">
-                        <img class="lazyOwl img-responsive" data-src="<?= $post->getPathImage() . $image ?>"
-                             alt="spas">
-                    </div>
-                <?php
-                }
+            foreach ($post->images as $image) {
+                ?>
+                <div class="item thumbnail">
+                    <img class="lazyOwl img-responsive" data-src="<?= $post->getUrlImages() . $image ?>"
+                         alt="spas">
+                </div>
+            <?php
             }
             ?>
         </div>
 
         <div id="owl-gallery">
             <?php
-            foreach ($images as $image) {
-                if ($image !== '.' && $image !== '..' && $image !== '.gitignore') {
-                    ?>
-                    <div class="item thumbnail">
-                        <img class="lazyOwl img-responsive" data-src="<?= $post->getPathImage() . $image ?>"
-                             alt="spas">
-                    </div>
-                <?php
-                }
+            foreach ($post->images as $image) {
+                ?>
+                <div class="item thumbnail">
+                    <img class="lazyOwl img-responsive" data-src="<?= $post->getUrlImages() . $image ?>"
+                         alt="spas">
+                </div>
+            <?php
             }
             ?>
         </div>
