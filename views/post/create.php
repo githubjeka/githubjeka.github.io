@@ -14,7 +14,7 @@ Url::remember();
             <?php
             $items = [];
             foreach ($post->sectors as $id => $name)
-                $items[] = ['label' => $name, 'url' => ['/post/create', 'id' => $id], 'active' => ($id === $post->sector)];
+                $items[] = ['label' => $name, 'url' => ['/post/create', 'id' => $id], 'active' => ($id == $post->sector)];
             echo \yii\bootstrap\Nav::widget(['items' => $items]);
             ?>
         </div>
