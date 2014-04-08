@@ -15,11 +15,21 @@ $post = new \app\models\Post();
         </a>
     </section>
 
-    <section class="col-lg-4 bg2 grid2"><h1><?= $post->sectors[2] ?></h1></section>
+    <section class="col-lg-4 bg2 grid2">
+        <a href="<?= Url::toRoute(['view', 'id' => 2]) ?>">
+            <h1><?= $post->sectors[2] ?></h1>
+        </a>
+    </section>
 
-    <section class="col-lg-4 bg3 grid3"><h1><?= $post->sectors[3] ?></h1></section>
+    <section class="col-lg-4 bg3 grid3">
+        <a href="<?= Url::toRoute(['view', 'id' => 3]) ?>">
+            <h1><?= $post->sectors[3] ?></h1>
+        </a></section>
 
-    <section class="col-lg-4 bg4 grid4"><h1><?= $post->sectors[4] ?></h1></section>
+    <section class="col-lg-4 bg4 grid4">
+        <a href="<?= Url::toRoute(['view', 'id' => 4]) ?>">
+            <h1><?= $post->sectors[4] ?></h1>
+        </a></section>
 
     <section class="col-lg-4 bg5 grid5">
         <small>Частное унитарное предприятие по оказанию услуг</small>
