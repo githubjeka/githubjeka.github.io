@@ -35,8 +35,7 @@ $post = new \app\models\Post();
         <small>Частное унитарное предприятие по оказанию услуг</small>
         <h1>Студия "СПЭС"</h1>
         <hr>
-        <img
-            src="http://image.spreadshirt.net/image-server/v1/designs/14787655,width%3D178,height%3D178/60-year-diamond-jubilee-queen-elizabeth-logo.png">
+        <img src="<?= Yii::getAlias('@web/studiospas/logo.png'); ?>">
         <footer>
             <p>2014 - spas</p>
 
