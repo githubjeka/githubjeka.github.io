@@ -1,5 +1,5 @@
 <?php
-/** @var $post app\models\PostForm */
+/** @var $post app\models\Post */
 
 use yii\helpers\Url;
 use yii\widgets\ActiveForm;
@@ -24,25 +24,20 @@ Url::remember();
 
         <div id="owl-simple">
             <?php
-            $images = scandir($post->getPathImage(false));
-            foreach ($images as $image) {
-                if ($image !== '.' && $image !== '..' && $image !== '.gitignore') {
+            foreach ($post->images as $image) {
                     ?>
-
                     <div class="item thumbnail">
-                        <img class="lazyOwl img-responsive" data-src="<?= $post->getPathImage() . $image ?>" alt="spas">
+                        <img class="lazyOwl img-responsive" data-src="<?= $post->getUrlImages() . $image ?>" alt="spas">
 
                         <div class="caption">
                             <form action="<?= Url::to(['/post/delete-image']) ?>" method="post">
                                 <input type="hidden" value="<?= Yii::$app->request->csrfToken ?>" name="_csrf">
-                                <input type="hidden" value="<?= $post->getPathImage(false) . $image ?>" name="path">
+                                <input type="hidden" value="<?= $post->getPathImage() . $image ?>" name="path">
                                 <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button>
                             </form>
                         </div>
                     </div>
-
                 <?php
-                }
             }
             ?>
         </div>

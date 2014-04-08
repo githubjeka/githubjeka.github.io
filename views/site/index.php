@@ -5,7 +5,7 @@
 use yii\helpers\Url;
 
 $this->title = 'My Yii Application';
-$post = new \app\models\PostForm();
+$post = new \app\models\Post();
 ?>
 <div class="grid row height100">
 

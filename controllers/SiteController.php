@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-use app\models\PostForm;
+use app\models\Post;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -56,7 +56,7 @@ class SiteController extends Controller
 
     public function actionView($id)
     {
-        $post = new PostForm();
+        $post = new Post();
 
         if (isset($post->sectors[$id])) {
             $post->sector = $id;

@@ -1,11 +1,12 @@
 <?php
 namespace app\controllers;
 
+use Dropbox\Client;
 use Yii;
 use yii\helpers\Url;
 use yii\web\Controller;
-use app\models\PostForm;
-use app\models\ImageForm;
+use app\models\Post;
+use app\models\Image;
 use yii\web\HttpException;
 use yii\web\UploadedFile;
 
@@ -13,31 +14,35 @@ class PostController extends Controller
 {
     public function actionCreate($id)
     {
-        $model = new ImageForm();
-        $post = new PostForm();
+        $image = new Image();
+        $post = new Post();
 
         if (isset($post->sectors[$id])) {
             $post->sector = $id;
-            $post->content = file_get_contents($post->getPathContent());
+            $post->content = $post->getContentDBX();
         } else {
             throw new HttpException(404);
         }
 
         if (Yii::$app->request->isPost) {
-            $model->file = UploadedFile::getInstance($model, 'file');
+
             if ($post->load(Yii::$app->request->post())) {
                 $handle = fopen($post->getPathContent(), 'w');
-                fwrite($handle, $post->content);
+                fwrite($handle,$post->content);
                 fclose($handle);
+                $post->saveContentDBX();
             }
 
+            $image->file = UploadedFile::getInstance($image, 'file');
 
-            if ($model->validate()) {
-                $model->file->saveAs($post->getPathImage(false) . $model->file->baseName . '.' . $model->file->extension);
+            if ($image->validate('file')) {
+                if ($image->file->saveAs($post->getPathImage() . $image->file->name)) {
+                    $post->saveImageDBX($image->file->name);
+                };
             }
         }
 
-        return $this->render('create', ['model' => $model, 'post' => $post]);
+        return $this->render('create', ['model' => $image, 'post' => $post]);
     }
 
     public function actionDeleteImage()

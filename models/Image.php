@@ -5,9 +5,9 @@ use yii\base\Model;
 use yii\web\UploadedFile;
 
 /**
- * UploadForm is the model behind the upload form.
+ * Image is the model
  */
-class ImageForm extends Model
+class Image extends Model
 {
     /**
      * @var UploadedFile|Null file attribute
