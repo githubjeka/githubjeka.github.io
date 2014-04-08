@@ -183,15 +183,6 @@ section {
 
 .grid5 {
     text-align: center;
-    padding-bottom: 100px;
-}
-
-.grid5 footer {
-    height: 30px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
 }
 
 /* --- Анимация ---- */
