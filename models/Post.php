@@ -105,6 +105,12 @@ class Post extends Model
         fclose($handle);
     }
 
+    public function deleteImage($path)
+    {
+        $dbxClient = new Client(Yii::$app->params['dbxAccessToken'], "PHP-Example/1.0");
+        $dbxClient->delete($path);
+    }
+
     public function getPathContent($forDBX = false)
     {
         return ($forDBX ? '/studiospas/content/' : Yii::getAlias('@app/studiospas/content/')) . $this->sector . '/content.txt';

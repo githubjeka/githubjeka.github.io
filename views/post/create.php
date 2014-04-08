@@ -32,7 +32,7 @@ Url::remember();
                         <div class="caption">
                             <form action="<?= Url::to(['/post/delete-image']) ?>" method="post">
                                 <input type="hidden" value="<?= Yii::$app->request->csrfToken ?>" name="_csrf">
-                                <input type="hidden" value="<?= $post->getPathImage() . $image ?>" name="path">
+                                <input type="hidden" value="<?= $post->getUrlImages() . $image ?>" name="path">
                                 <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button>
                             </form>
                         </div>
