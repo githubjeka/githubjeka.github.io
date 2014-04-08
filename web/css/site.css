@@ -138,11 +138,6 @@ section {
     background: #C04D31;
 }
 
-.content {
-    position: relative;
-    width: 100%;
-}
-
 .grid a {
     color: #000000;
 }
@@ -183,15 +178,6 @@ section {
 
 .grid5 {
     text-align: center;
-    padding-bottom: 100px;
-}
-
-.grid5 footer {
-    height: 100px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
 }
 
 /* --- Анимация ---- */

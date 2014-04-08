@@ -36,6 +36,9 @@ $config = [
             'enablePrettyUrl' => true,
             'rules' => [
                 ['pattern' => 'individual', 'route' => 'site/view', 'defaults' => ['id' => 1]],
+                ['pattern' => 'costumes', 'route' => 'site/view', 'defaults' => ['id' => 2]],
+                ['pattern' => 'evening-wedding-dresses', 'route' => 'site/view', 'defaults' => ['id' => 3]],
+                ['pattern' => 'brands', 'route' => 'site/view', 'defaults' => ['id' => 4]],
                 ['pattern' => 'furnishings', 'route' => 'site/view', 'defaults' => ['id' => 5]],
                 '/' => 'site/index',
                 ['pattern' => 'sesame', 'route' => 'post/create', 'defaults' => ['id' => 1]],

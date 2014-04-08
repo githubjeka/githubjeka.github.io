@@ -28,7 +28,7 @@ class PostController extends Controller
 
             if ($post->load(Yii::$app->request->post())) {
                 $handle = fopen($post->getPathContent(), 'w');
-                fwrite($handle,$post->content);
+                fwrite($handle, $post->content);
                 fclose($handle);
                 $post->saveContentDBX();
             }
@@ -48,7 +48,8 @@ class PostController extends Controller
     public function actionDeleteImage()
     {
         if (isset($_POST['path'])) {
-            if (unlink($_POST['path'])) {
+            if (unlink(Yii::getAlias('@app/web/') . $_POST['path'])) {
+                (new Post)->deleteImage($_POST['path']);
                 $this->redirect(Url::previous());
             }
         }

@@ -60,7 +60,7 @@ class SiteController extends Controller
 
         if (isset($post->sectors[$id])) {
             $post->sector = $id;
-            $post->content = file_get_contents($post->getPathContent());
+            $post->content = $post->getContentDBX();
         } else {
             throw new HttpException(404);
         }

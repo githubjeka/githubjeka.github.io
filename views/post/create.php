@@ -14,7 +14,7 @@ Url::remember();
             <?php
             $items = [];
             foreach ($post->sectors as $id => $name)
-                $items[] = ['label' => $name, 'url' => ['/post/create', 'id' => $id], 'active' => ($id === $post->sector)];
+                $items[] = ['label' => $name, 'url' => ['/post/create', 'id' => $id], 'active' => ($id == $post->sector)];
             echo \yii\bootstrap\Nav::widget(['items' => $items]);
             ?>
         </div>
@@ -25,19 +25,19 @@ Url::remember();
         <div id="owl-simple">
             <?php
             foreach ($post->images as $image) {
-                    ?>
-                    <div class="item thumbnail">
-                        <img class="lazyOwl img-responsive" data-src="<?= $post->getUrlImages() . $image ?>" alt="spas">
+                ?>
+                <div class="item thumbnail">
+                    <img class="lazyOwl img-responsive" data-src="<?= $post->getUrlImages() . $image ?>" alt="spas">
 
-                        <div class="caption">
-                            <form action="<?= Url::to(['/post/delete-image']) ?>" method="post">
-                                <input type="hidden" value="<?= Yii::$app->request->csrfToken ?>" name="_csrf">
-                                <input type="hidden" value="<?= $post->getPathImage() . $image ?>" name="path">
-                                <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button>
-                            </form>
-                        </div>
+                    <div class="caption">
+                        <form action="<?= Url::to(['/post/delete-image']) ?>" method="post">
+                            <input type="hidden" value="<?= Yii::$app->request->csrfToken ?>" name="_csrf">
+                            <input type="hidden" value="<?= $post->getUrlImages() . $image ?>" name="path">
+                            <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button>
+                        </form>
                     </div>
-                <?php
+                </div>
+            <?php
             }
             ?>
         </div>
