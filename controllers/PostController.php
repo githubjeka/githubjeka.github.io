@@ -1,7 +1,6 @@
 <?php
 namespace app\controllers;
 
-use Dropbox\Client;
 use Yii;
 use yii\helpers\Url;
 use yii\web\Controller;
@@ -9,6 +8,7 @@ use app\models\Post;
 use app\models\Image;
 use yii\web\HttpException;
 use yii\web\UploadedFile;
+use yii\imagine\Image as Imagine;
 
 class PostController extends Controller
 {
@@ -36,9 +36,9 @@ class PostController extends Controller
             $image->file = UploadedFile::getInstance($image, 'file');
 
             if ($image->validate('file')) {
-                if ($image->file->saveAs($post->getPathImage() . $image->file->name)) {
-                    $post->saveImageDBX($image->file->name);
-                };
+                Imagine::thumbnail($image->file->tempName, 500, 500)
+                    ->save($post->getPathImage() . $image->file->name, ['quality' => 75]);
+                $post->saveImageDBX($image->file->name);
             }
         }
 

@@ -2,36 +2,11 @@
 
 html,
 body {
-    height: 100%;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.wrap {
-    min-height: 100%;
-    height: auto;
-    margin: 0 auto -60px;
-    padding: 0 0 60px;
-}
-
-.wrap > .container {
-    padding: 70px 15px 20px;
-}
-
-.footer {
-    height: 60px;
-    background-color: #f5f5f5;
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
-}
-
-.jumbotron {
-    text-align: center;
-    background-color: transparent;
-}
-
-.jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+.height100 {
+    height: 100%;
 }
 
 .not-set {
@@ -49,34 +24,6 @@ a.asc:after, a.desc:after {
     font-weight: normal;
     line-height: 1;
     padding-left: 5px;
-}
-
-a.asc:after {
-    content: /*"\e113"*/ "\e151";
-}
-
-a.desc:after {
-    content: /*"\e114"*/ "\e152";
-}
-
-.sort-numerical a.asc:after {
-    content: "\e153";
-}
-
-.sort-numerical a.desc:after {
-    content: "\e154";
-}
-
-.sort-ordinal a.asc:after {
-    content: "\e155";
-}
-
-.sort-ordinal a.desc:after {
-    content: "\e156";
-}
-
-.grid-view th {
-    white-space: nowrap;
 }
 
 .hint-block {
@@ -97,21 +44,6 @@ li.active a {
     background-color: #7eabcc;
     color: white;
     font-weight: bold;
-}
-
-/*___________________________________________________________________________________*/
-
-html, body, .height100 {
-    height: 100%;
-}
-
-section {
-    height: 50%;
-    box-shadow: inset 0 0 7px #000;
-}
-
-.carousel {
-    overflow: hidden;
 }
 
 .bg1 {
@@ -139,70 +71,112 @@ section {
 }
 
 .grid a {
-    color: #000000;
+    color: #2e2e2e;
 }
 
-.grid1, .grid2, .grid3, .grid4, .grid6 {
+section {
+    box-shadow: inset 0 0 7px #000;
+}
+
+section {
+    padding: 15px 7px;
     -webkit-transition: all 1s;
     transition: all 1s;
     position: relative;
-    text-align: center;
 }
 
-.grid1:hover {
-    background: url(http://farm5.staticflickr.com/4122/4878886438_acf913021e.jpg) no-repeat center center;
+aside, article {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.grid2:hover {
-    background: url(http://farm8.staticflickr.com/7058/6830016482_2b2f1b90fc.jpg) no-repeat center center;
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* -------------------------------------------------------- */
+
+/* Mobile devices */
+@media (max-width: 768px) {
+
+    section h1 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 27px;
+    }
+
+    .grid5 .logo {
+        height: 150px;
+    }
 }
 
-.grid3:hover {
-    background: url('http://www.absasa.com/images/products/evening-dresses/sexy_sheath_column_v-neck_beading_sleeveless_floor-length_chiffon_prom_dresses_evening_dresses-1.jpg') no-repeat center center;
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px){
+
+    section h1 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 27px;
+    }
+
+    section {
+        height: 50%;
+    }
+
+    section .logo {
+        height: 50%;
+    }
 }
 
-.grid4:hover {
-    background: url('http://www.seb.ee/image/pildipank/vormid.jpg') no-repeat center center;
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    section {
+        height: 50%;
+    }
+
+    .grid5 .logo {
+        height: 50%;
+    }
+
+    aside , article {
+        height: 100%;
+    }
+
+    article .content {
+        font-size: 18px;
+    }
 }
 
-.grid6:hover {
-    background: url('http://www.architectorgallery.ru/UPLOAD/2012/04/06/dscn4345_1200_0.jpg') no-repeat center center;
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    section {
+        height: 30%;
+    }
+
+    .grid5 {
+        height: 150%;
+    }
+
+    .grid5 .logo {
+        height: 20%;
+    }
 }
 
-.grid1:hover, .grid2:hover {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    section {
+        height: 100%;
+    }
+
+    .grid5 .logo {
+        height: 20%;
+    }
+
+    #owl-row  {
+        margin-bottom: 70px;
+    }
 }
 
-.grid5 {
-    text-align: center;
-}
-
-/* --- Анимация ---- */
-
-.ng-view.ng-enter, .ng-view.ng-leave {
-    -webkit-transition: all .1s;
-    transition: all .1s;
-}
-
-.ng-view.ng-enter aside, .ng-view.ng-leave aside {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-}
-
-.ng-view.ng-enter article, .ng-view.ng-leave article {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-}
-
-article .content {
-    font-size: 18px;
-}
-
-/*__________________*/
-
+/*_______OWL___________*/
 #owl-demo .item {
     margin: 3px;
 }
@@ -213,33 +187,15 @@ article .content {
     height: auto;
 }
 
-#owl-gallery .item {
+#owl-one .item {
+
+}
+
+#owl-row .item {
+    margin: 3px 3px 3px 0;
+}
+
+.synced .item img{
     background: #0c83e7;
-    padding: 70px 0px;
-    margin: 5px;
-    color: #FFF;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    text-align: center;
-}
-
-#owl-sync .item {
-    background: #C9C9C9;
-    padding: 10px 0px;
-    margin: 5px;
-    color: #FFF;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    text-align: center;
-    cursor: pointer;
-}
-
-#owl-sync .item h1 {
-    font-size: 18px;
-}
-
-#owl-sync .synced .item {
-    background: #0c83e7;
+    border-color: #0c83e7;
 }
