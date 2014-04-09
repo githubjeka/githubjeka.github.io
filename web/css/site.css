@@ -170,10 +170,6 @@ aside, article {
     .grid5 .logo {
         height: 20%;
     }
-
-    #owl-row  {
-        margin-bottom: 70px;
-    }
 }
 
 /*_______OWL___________*/
@@ -188,7 +184,11 @@ aside, article {
 }
 
 #owl-one .item {
+    height: 100%;
+}
 
+#owl-one .item img {
+    height: 60%;
 }
 
 #owl-row .item {
