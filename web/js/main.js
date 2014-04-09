@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
-    var sync1 = $("#owl-gallery");
-    var sync2 = $("#owl-sync");
+    var sync1 = $("#owl-one");
+    var sync2 = $("#owl-row");
     var sync3 = $("#owl-simple");
 
     sync1.owlCarousel({
@@ -12,16 +12,16 @@ $(document).ready(function () {
         pagination: false,
         afterAction: syncPosition,
         responsiveRefreshRate: 200,
-        navigationText: ['<i class="fa fa-arrow-circle-o-left fa-2x"></i>', '<i class="fa fa-arrow-circle-o-right fa-2x"></i>']
+        navigationText: ['<span class="fa fa-arrow-circle-o-left fa-2x"></span>', '<span class="fa fa-arrow-circle-o-right fa-2x"></span>']
     });
 
     sync2.owlCarousel({
-        items: 7,
         lazyLoad: true,
-        itemsDesktop: [1199, 10],
-        itemsDesktopSmall: [979, 10],
-        itemsTablet: [768, 8],
-        itemsMobile: [479, 4],
+        items : 8,
+        itemsDesktop: [1200, 7],
+        itemsDesktopSmall: [979,5],
+        itemsTablet: [768, 4],
+        itemsMobile: false,
         pagination: false,
         responsiveRefreshRate: 100,
         afterInit: function (el) {
@@ -35,7 +35,7 @@ $(document).ready(function () {
         itemsDesktop: [1199, 10],
         itemsDesktopSmall: [979, 10],
         itemsTablet: [768, 8],
-        itemsMobile: [479, 4],
+        itemsMobile: [479, 4]
     });
 
     function syncPosition(el) {

@@ -4,27 +4,25 @@ use yii\helpers\Url;
 ?>
 <div class="row height100">
 
-    <aside class="height100 bg2 col-xs-6">
+    <aside class="bg2 col-sm-12 col-md-8 col-lg-8 text-center">
 
-        <div id="owl-sync">
+        <div id="owl-row" class="hidden-xs">
             <?php
             foreach ($post->images as $image) {
                 ?>
-                <div class="item thumbnail">
-                    <img class="lazyOwl img-responsive" data-src="<?= $post->getUrlImages() . $image ?>"
+                <div class="item">
+                    <img class="lazyOwl img-responsive img-thumbnail" data-src="<?= $post->getUrlImages() . $image ?>"
                          alt="spas">
                 </div>
-            <?php
-            }
-            ?>
+            <?php } ?>
         </div>
 
-        <div id="owl-gallery">
+        <div id="owl-one">
             <?php
             foreach ($post->images as $image) {
                 ?>
-                <div class="item thumbnail">
-                    <img class="lazyOwl img-responsive" data-src="<?= $post->getUrlImages() . $image ?>"
+                <div class="item">
+                    <img class="lazyOwl img-responsive img-thumbnail" data-src="<?= $post->getUrlImages() . $image ?>"
                          alt="spas">
                 </div>
             <?php
@@ -34,7 +32,7 @@ use yii\helpers\Url;
 
     </aside>
 
-    <article class="height100 bg5 col-xs-6">
+    <article class="bg5 col-sm-12 col-md-4 col-lg-4">
         <div class="text-right">
             <a href="<?= Url::to('/') ?>" title="Вернутся на главную">
                 <span class="fa fa-home fa-3x"></span>
@@ -47,8 +45,8 @@ use yii\helpers\Url;
             <?= $post->content ?>
         </div>
 
-
     </article>
+
 </div>
 
 
