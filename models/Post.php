@@ -57,9 +57,9 @@ class Post extends Model
         $dbxClient = new Client(Yii::$app->params['dbxAccessToken'], "PHP-Example/1.0");
         $folderMetadata = $dbxClient->getMetadataWithChildren('/studiospas/images/' . $this->sector);
 
-        if ($folderMetadata['hash'] !== Yii::$app->cache->get('images_hash')) {
+        if ($folderMetadata['hash'] !== Yii::$app->cache->get('images_hash' . $this->sector)) {
 
-            Yii::$app->cache->set('images_hash', $folderMetadata['hash']);
+            Yii::$app->cache->set('images_hash' . $this->sector, $folderMetadata['hash']);
 
             if (is_array($folderMetadata['contents'])) {
                 foreach ($folderMetadata['contents'] as $_imageArray) {
@@ -79,10 +79,10 @@ class Post extends Model
                 }
             }
 
-            Yii::$app->cache->set('images_array', $_toCache);
+            Yii::$app->cache->set('images_array' . $this->sector, $_toCache);
         }
 
-        return Yii::$app->cache->get('images_array');
+        return Yii::$app->cache->get('images_array' . $this->sector);
     }
 
     public function saveContentDBX()
