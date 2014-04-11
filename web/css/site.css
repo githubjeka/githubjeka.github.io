@@ -117,6 +117,11 @@ aside, article {
         font-size: 27px;
     }
 
+    .grid h3, .grid h4 {
+        margin: 0;
+        font-size: 14px;
+    }
+
     section {
         height: 50%;
     }

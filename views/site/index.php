@@ -9,14 +9,35 @@ $post = new \app\models\Post();
 ?>
 <div class="grid row height100">
 
-    <section class="bg5 grid5 text-center col-sm-4 col-sm-push-4 col-md-push-0 col-md-4 col-lg-2">
+    <section class="bg5 grid5 text-center col-sm-4 col-sm-push-4 col-md-push-0 col-md-4 col-lg-2 ">
 
-        <small>Частное унитарное предприятие по оказанию услуг</small>
+        <small class="hidden-sm">Частное унитарное предприятие по оказанию услуг</small>
         <h1>Студия "СПЭС"</h1>
 
-        <img src="<?= Yii::getAlias('@web/studiospas/logo.png'); ?>" class="img-responsive center-block logo">
+        <img src="<?= Yii::getAlias('@web/images/logo.png'); ?>" class="img-responsive center-block logo">
 
-        <small>2014 - Витебск - SPAS</small>
+        <h3>Наши контакты:</h3>
+
+        <p>
+            г. Витебск, парк им. Фрунзе,1 Конц. зал "Витебск", каб. 003-004
+        </p>
+
+        <div class="text-danger">
+            <div class="row">
+                <div class="col-sm-6 col-lg-12">
+                    <h4>+375-295-190-190 <img src="<?= Yii::getAlias('@web/images/mts.png'); ?>" class="hidden-sm"></h4>
+                </div>
+                <div class="col-sm-6 col-lg-12">
+                    <h4>
+                        +375-296-229-565 <img src="<?= Yii::getAlias('@web/images/velcom.png'); ?>" class="hidden-sm">
+                    </h4>
+                </div>
+
+            </div>
+
+        </div>
+
+        <small class="hidden-sm">2014 - SPAS</small>
 
     </section>
 
