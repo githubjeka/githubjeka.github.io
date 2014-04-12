@@ -10,6 +10,19 @@ use app\assets\AppAsset;
  * @var string $content
  */
 AppAsset::register($this);
+$this->registerMetaTag(['encoding' => 'utf-8']);
+$this->title = 'Студия моды и стиля SPAS';
+$this->registerMetaTag([
+        'name' => 'description',
+        'content' => 'Витебск Беларусь студия моды и стиля, ателье.
+        Пошив одежды по индивидуальным заказам.
+        Изготовление Сценические костюмы.
+        Разработка и пошив вечерних и свадебных нарядов платьев.
+        Разработка фирменного стиля и форменной одежды.
+        Оформление интерьера.
+    '],
+    'meta-description'
+);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
