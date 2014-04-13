@@ -10,8 +10,11 @@ use app\assets\AppAsset;
  * @var string $content
  */
 AppAsset::register($this);
-$this->registerMetaTag(['encoding' => 'utf-8']);
 $this->title = 'Студия моды и стиля SPAS';
+
+$this->registerMetaTag(['encoding' => 'utf-8']);
+$this->registerMetaTag(['name' => 'google-site-verification', 'content' => '3cC7iPXqFi5UUoRZt8MjYO7HyAq1QFCjIrhzbXL_Aq8']);
+$this->registerMetaTag(['name' => 'viewport', 'content' => 'width=device-width, initial-scale=1']);
 $this->registerMetaTag([
         'name' => 'description',
         'content' => 'Витебск Беларусь студия моды и стиля, ателье.
@@ -28,9 +31,6 @@ $this->registerMetaTag([
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>" class="height100">
 <head>
-    <meta charset="<?= Yii::$app->charset ?>"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="3cC7iPXqFi5UUoRZt8MjYO7HyAq1QFCjIrhzbXL_Aq8"/>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">

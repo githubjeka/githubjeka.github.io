@@ -14,7 +14,7 @@ $post = new \app\models\Post();
         <small class="hidden-sm">Частное унитарное предприятие по оказанию услуг</small>
         <h1>Студия "СПЭС"</h1>
 
-        <img src="<?= Yii::getAlias('@web/images/logo.png'); ?>" class="img-responsive center-block logo">
+        <img src="<?= Yii::getAlias('@web/images/logo.png'); ?>" class="img-responsive center-block logo hidden-sm">
 
         <h3>Наши контакты:</h3>
 
