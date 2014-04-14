@@ -13,17 +13,10 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
     private static $users = [
         '100' => [
             'id' => '100',
-            'username' => 'admin',
-            'password' => 'admin',
+            'username' => 'studiospas',
+            'password' => '$2y$10$alfo8m/P769APUgliavkgu9h7VoS4U8zo5e8X1T7qYu9DIrcHmtja',
             'authKey' => 'test100key',
             'accessToken' => '100-token',
-        ],
-        '101' => [
-            'id' => '101',
-            'username' => 'demo',
-            'password' => 'demo',
-            'authKey' => 'test101key',
-            'accessToken' => '101-token',
         ],
     ];
 
@@ -98,6 +91,6 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
      */
     public function validatePassword($password)
     {
-        return $this->password === $password;
+        return password_verify($password, self::$users[100]['password']);
     }
 }

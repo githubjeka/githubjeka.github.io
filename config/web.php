@@ -42,7 +42,6 @@ $config = [
                 ['pattern' => 'furnishings', 'route' => 'site/view', 'defaults' => ['id' => 5]],
                 '/' => 'site/index',
                 ['pattern' => 'sesame', 'route' => 'post/create', 'defaults' => ['id' => 1]],
-
             ]
         ],
     ],

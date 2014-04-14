@@ -2,6 +2,8 @@
 namespace app\controllers;
 
 use Yii;
+use yii\filters\AccessControl;
+use yii\filters\VerbFilter;
 use yii\helpers\Url;
 use yii\web\Controller;
 use app\models\Post;
@@ -12,6 +14,15 @@ use yii\imagine\Image as Imagine;
 
 class PostController extends Controller
 {
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+            ],
+        ];
+    }
+
     public function actionCreate($id)
     {
         $image = new Image();
