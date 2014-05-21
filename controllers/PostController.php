@@ -52,7 +52,7 @@ class PostController extends Controller
 
             $image->file = UploadedFile::getInstance($image, 'file');
 
-            if ($image->validate('file')) {
+            if ($image->validate('file') && $image->file->size > 0) {
                 Imagine::thumbnail($image->file->tempName, 500, 500)
                     ->save($post->getPathImage() . $image->file->name, ['quality' => 75]);
                 $post->saveImageDBX($image->file->name);
